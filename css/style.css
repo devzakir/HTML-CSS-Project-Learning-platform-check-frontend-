@@ -10,7 +10,7 @@
     overflow: hidden;
 }
 
-/* .container::before{
+.container::before{
     content: '';
     position: absolute;
     top: 0px;
@@ -18,7 +18,7 @@
     width: 100%;
     height: 800px;
     background: linear-gradient( rgba(23, 140, 208, 0.18), transparent 90%);
-} */
+}
 
 /*======== navbar ============*/
 .navbar{
@@ -333,6 +333,7 @@
     position: relative;
 }
 
+
 .about__left{
     width: 40%;
     display: flex;
@@ -341,8 +342,19 @@
 }
 
 .about__left-img{
+    position: relative;
     border-radius: 10px;
-    box-shadow: -10px 10px 0 0 #9E81DA;;
+    box-shadow: -10px 10px 0 0 #9E81DA;
+    z-index: 2;
+}
+
+.about__shape{
+    position: absolute;
+    top: 220px;
+    left: -80px;
+    transform: rotate(27deg);
+    z-index: 1;
+    opacity: 0.5;
 }
 
 .about__right{
@@ -368,7 +380,7 @@
 }
 
 .about__title{
-    font-size: 40px;
+    font-size: 50px;
     line-height: 1.6;
     color: #323232;
     margin:0 0 15px;
@@ -388,4 +400,16 @@
     width: 150px;
     font-size: 14px;
     border-radius: 5px;
+}
+
+/*======== Popular Course ============*/
+
+.popular__course-content{
+    display: flex;
+    border: 1 solid #E0E0E0;
+}
+
+.popular__course-rating{
+    display: flex;
+    align-items: center;
 }
