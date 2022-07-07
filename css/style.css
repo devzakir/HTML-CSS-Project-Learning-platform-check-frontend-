@@ -30,6 +30,16 @@
     width: 100%;
 }
 
+.navbar__logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav__logo{
+    width: 80px;
+}
+
 .nav__menu{
     display: flex;
     justify-content: flex-end;
@@ -93,8 +103,6 @@
     border: 2px solid rgba(23, 141, 208, 0.6);
     border-radius: 5px;
     width: 150px;
-    color: #505050;
-    content: "";
     transition: 0.4s;
     cursor: pointer;
 }
@@ -170,7 +178,7 @@
 .hero__element{
     position: absolute;
     top: 240px;
-    right: 870px;
+    right: 684px;
 }
 
 .hero__right{
@@ -487,6 +495,7 @@
     z-index: 2;
     top: 2300px;
     left: 170px;
+    opacity: 0.2;
 }
 
 .review{
@@ -603,4 +612,159 @@
     width: 82px;
     margin-left: -28px;
     margin-top: -32px;
+}
+
+/*======== Companies ============*/
+.companies{
+    margin: 40px 0 250px;
+}
+
+.companies__content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #525358;
+    padding: 40px 0;
+}
+
+.companies__img{
+    width: 140px;
+    height: 35px;
+}
+
+/*======== footer ============*/
+.footer{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: rgba(23, 141, 208, 0.4);
+}
+
+/*======== subscription ============*/
+.subs{
+    width: 60%;
+    margin: -150px auto 0;
+    position: relative;
+    z-index: 999;
+}
+
+.subs__elem{
+    position: absolute;
+    top: 105px;
+    right: 102px;
+    width: 60px;
+}
+
+.subs__content{
+    padding: 20px 30px;
+    width: 100%;
+    background-color: #178DD0;
+    border-radius: 10px;
+}
+
+.subs__title{
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.subs__description{
+    width: 70%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    line-height: 1.9;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.subs__form{
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.subs__input{
+    border: 0.5px solid white;
+    background: transparent;
+    padding: 10px 10px;
+    width: 40%;
+    color: white;
+    border-radius: 2px;
+}
+
+.subs__input:focus{
+    outline: none;
+}
+
+.subs__input::-webkit-input-placeholder{
+    color: #D1D1D1;
+    width: 100%;    
+}
+
+.subs__submit{
+    width: 150px;
+    background-color: #F0BB00;
+    color: white;
+    border-radius: 4px;
+}
+
+
+/*======== Footer Area ============*/
+.footerarea__elem{
+    position: absolute;
+    top: 131px;
+    left: 352px;
+}
+
+.footerarea__content{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin: 60px 0 10px;
+}
+
+.footerarea__link.title{
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.footerarea__link{
+    margin: 20px 0;
+    color: black;
+}
+
+/*======== Footer Social ============*/
+.footer__social{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.footer__social-title{
+    margin: 20px 0;
+}
+
+.footer__social-content{
+    display: flex;
+    gap: 50px;
+}
+
+.footer__social-icon{
+    font-size: 30px;
+}
+/*======== Footer Bottom ============*/
+.footer__bottom{
+    margin: 30px 0;
+}
+
+.footer__bottom-title{
+    text-align: center;
+    font-size: 14px;
 }
