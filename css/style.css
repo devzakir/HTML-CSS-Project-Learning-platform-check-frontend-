@@ -403,13 +403,204 @@
 }
 
 /*======== Popular Course ============*/
+.popular{
+    margin: 50px 0;
+}
+
+.popular__title{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.description{
+    width: 60%;
+    margin: 40px auto;
+    text-align: center;
+}
 
 .popular__course-content{
     display: flex;
-    border: 1 solid #E0E0E0;
+    justify-content: center;
+    gap: 20px;
+}
+
+.popular__course{
+    border: 1px solid #E0E0E0;
+}
+
+.popular__course-bottom{
+    padding: 10px;
+}
+
+.popular__course-title{
+    margin: 10px 0 5px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.popular__course-author{
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .popular__course-rating{
     display: flex;
+    gap: 5px;
     align-items: center;
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+.popular__course-rating-group{
+    color: #FCB500;
+    font-size: 12px;
+}
+
+.popular__course-price{
+    font-size: 16px;
+    font-weight: inherit;
+    margin: 5px 0;
+}
+
+.popular__course-tag{
+    text-align: center;
+    background-color: #F2D262;
+    width: 80px;
+}
+
+.popular__button{
+    display: flex;
+    text-align: center;
+    margin: 40px auto;
+    background-color: #178DD0;
+    padding: 15px 25px;
+    color: white;
+    border-radius: 5px;
+}
+
+/*======== Review ============*/
+.review__element{
+    position: absolute;
+    z-index: 2;
+    top: 2300px;
+    left: 170px;
+}
+
+.review{
+    margin: 140px 0;
+    z-index: 2;
+}
+
+.review__content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.review__left{
+    width: 50%;
+    z-index: 999;
+}
+
+.review__cards{
+    position: relative;
+    display: flex;
+    width: 100%;
+    gap: 25px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.review__card-left{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.review__card-right{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.review__card{
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.review__elements-star{
+    font-size: 14px;
+    color: #FCB500;
+    margin: 10px 0;
+}
+
+.review__description{
+    font-size: 14px;
+    width: 100%;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.review__giver{
+    display: flex;
+    align-items: center;
+}
+.review__avatar{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.review__into{
+    margin-left: 10px;
+}
+
+.review__reviewer-name{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.review__reviewer-title{
+    font-size: 12px;
+}
+
+.review__right{
+    width: 50%;
+    display: flex;
+}
+
+.review__right-content{
+    width: 95%;
+    margin: auto;
+}
+
+.review__title{
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.review__description{
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.review__button{
+    width: 150px;
+    background-color: #178DD0;
+    padding: 8px 10px;
+    color: white;
+    border-radius: 3px;
+    margin: 10px 0;
+}
+
+.review__element-arrow{
+    width: 82px;
+    margin-left: -28px;
+    margin-top: -32px;
 }
