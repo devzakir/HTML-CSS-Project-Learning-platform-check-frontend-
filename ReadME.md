@@ -24,7 +24,12 @@
 * Media queries and responsiveness
 
 ### Image
-![image](image.png)
+
+<kbd>
+    <img src="./image.png">    
+<kbd/>
+
+<!-- ![image](image.png) -->
 
 ## Logo Credit
 [logoipsum](https://logoipsum.com/)
