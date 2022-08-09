@@ -23,18 +23,13 @@
 ### Undone
 * Media queries and responsiveness
 
+### Logo Credit
+[logoipsum](https://logoipsum.com/)
+
+### Figam Credit: [Tanvir Ahmed]() 
+
 ### Image
 
 <kbd>
     <img src="./image.png">    
 <kbd/>
-
-<!-- ![image](image.png) -->
-
-## Logo Credit
-[logoipsum](https://logoipsum.com/)
-
-## Figam Credit: [Tanvir Ahmed]() 
-
-
-
