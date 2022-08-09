@@ -26,8 +26,10 @@
 ### Image
 ![image](image.png)
 
-# Logo Credit
+## Logo Credit
 [logoipsum](https://logoipsum.com/)
+
+## Figam Credit: [Tanvir Ahmed]() 
 
 
 

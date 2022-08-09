@@ -2,11 +2,15 @@
 /* root css */
 @import url(root.css);
 
+body{
+    scroll-behavior: smooth;
+}
+
 .container {
     background: var(--color-white);
     width: 100%;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     overflow: hidden;
 }
 
@@ -25,7 +29,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
     max-width: 1200px;
     width: 100%;
 }
@@ -279,13 +282,22 @@
 /*======== herocard Section ============*/
 .herocard{
     position: relative;
-    margin: 60px auto;
-    width: 70%;
-    display: flex;
+    margin: 80px auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    padding: 20px 20px;
     box-shadow: var(--shadow-medium);
     border-radius: 10px;
+}
+
+.herocard__content{
+    padding: 20px 20px;
+}
+
+.herocard__content:not(:last-child){
+    padding: 20px 20px;
+    border-right: 1px solid var(--color-white-variant);
 }
 
 .herocard__content-main{
@@ -435,7 +447,18 @@
 }
 
 .popular__course{
-    border: 1px solid #E0E0E0;
+    border: 1px solid var(--color-white-variant);
+    position: relative;
+}
+
+.popular__course-tag{
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    text-align: center;
+    background-color: #F2D262;
+    width: 80px;
+    box-shadow: var(--shadow-medium);
 }
 
 .popular__course-bottom{
@@ -471,12 +494,7 @@
     font-size: 16px;
     font-weight: inherit;
     margin: 5px 0;
-}
-
-.popular__course-tag{
-    text-align: center;
-    background-color: #F2D262;
-    width: 80px;
+    color: #815AD2;
 }
 
 .popular__button{
@@ -487,6 +505,7 @@
     padding: 15px 25px;
     color: white;
     border-radius: 5px;
+    box-shadow: var(--shadow-medium);
 }
 
 /*======== Review ============*/
@@ -623,7 +642,6 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #525358;
     padding: 40px 0;
 }
 
@@ -637,7 +655,7 @@
     position: absolute;
     left: 0;
     width: 100%;
-    background-color: rgba(23, 141, 208, 0.4);
+    background-color: var(--color-blue);
 }
 
 /*======== subscription ============*/
@@ -658,14 +676,14 @@
 .subs__content{
     padding: 20px 30px;
     width: 100%;
-    background-color: #178DD0;
+    background-color: #F0BB00;
     border-radius: 10px;
 }
 
 .subs__title{
     text-align: center;
     margin: 20px 0;
-    color: white;
+    color: var(--color-black);
     font-weight: 500;
     font-size: 30px;
 }
@@ -673,7 +691,7 @@
 .subs__description{
     width: 70%;
     margin: 0 auto;
-    color: white;
+    color: var(--color-black);
     text-align: center;
     line-height: 1.9;
     font-size: 12px;
@@ -688,12 +706,12 @@
 }
 
 .subs__input{
-    border: 0.5px solid white;
+    border: 0.5px solid var(--color-black);
     background: transparent;
     padding: 10px 10px;
     width: 40%;
-    color: white;
-    border-radius: 2px;
+    color: var(--color-black);
+    border-radius: 4px;
 }
 
 .subs__input:focus{
@@ -707,8 +725,7 @@
 
 .subs__submit{
     width: 150px;
-    background-color: #F0BB00;
-    color: white;
+    background-color: var(--color-blue);
     border-radius: 4px;
 }
 
@@ -718,29 +735,31 @@
     position: absolute;
     top: 131px;
     left: 352px;
+    color: white;
 }
 
 .footerarea__content{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 50%;
     gap: 80px;
-    margin: 60px 0 10px;
+    margin: 60px auto 10px;
 }
 
 .footerarea__link.title{
-    color: black;
+    color: white;
     font-weight: 600;
     font-size: 18px;
 }
 
 .footerarea__link{
     margin: 20px 0;
-    color: black;
+    color: white;
 }
 
 /*======== Footer Social ============*/
 .footer__social{
-    width: 55%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -749,11 +768,13 @@
 
 .footer__social-title{
     margin: 20px 0;
+    color: white;
 }
 
 .footer__social-content{
     display: flex;
     gap: 50px;
+    color: white;
 }
 
 .footer__social-icon{
@@ -767,4 +788,5 @@
 .footer__bottom-title{
     text-align: center;
     font-size: 14px;
+    color: var(--color-white-variant);
 }
