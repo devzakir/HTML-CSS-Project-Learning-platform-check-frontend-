@@ -5,25 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
-    <!-- fontawesome -->
+    <!-- font-awesome -->
     <!-- <script src="https://kit.fontawesome.com/36d9f3a369.js"></script> -->
-    <link rel="stylesheet" href="./assets/all.min.css">
+    <link rel="stylesheet" href="./assets/fontawesome/all.min.css">
     <!-- css stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
     <!-- Media Queries -->
-    <link rel="stylesheet" href="css/media_queries.css">
+    <link rel="stylesheet" href="./assets/css/media_queries.css">
 </head>
 <body>
+
     <div class="container">
-        
-        <header class="header basic-margin" id="header">
+
+        <header class="header initial-margin" id="header">
+
             <nav class="navbar">
-                <div class="navbar__logo">
-                    <img src="./images/logo.svg" alt="Logo" class="nav__logo">
-                    <a href="" class="navbar__logo-title">Skilled Learner</a>
+                <div class="navbar__logo-area">
+                    <img src="./assets/images/logo.svg" alt="Logo" class="nav__logo">
+                    <a href="/" class="navbar__logo-title fs-600 fw-5 text-dark">Agencio</a>
                 </div>
     
                 <div class="nav__menu">
+
                     <ul class="nav__list">
                         <li class="nav__item">
                             <a href="#" class="nav__link">Home</a>
@@ -57,11 +60,11 @@
 
                     <div class="nav__button-group">
                         <button>
-                            <a href="#" class="nav__button login">Log In</a>
+                            <a href="#" class="nav__button login btn-transparent">Log In</a>
                         </button>
         
                         <button>
-                            <a href="#" class="nav__button signin">Sign Up Free</a>
+                            <a href="#" class="nav__button signin btn-blue">Sign Up Free</a>
                         </button>
                     </div>
 
@@ -69,15 +72,17 @@
                         <i class=''></i>
                     </div>
                 </div>
+
             </nav>
         </header>
 
         <main class="main">
+
             <section class="hero" id="hero">
                 <div class="hero__left">
                     <div class="hero__content">
                         <div class="hero__title">
-                            <h1>Find Course & <br> Improve Your Skill</h1>
+                            <h1 class="fs-900 fw-5">Find Course & <br> Improve Your Skill</h1>
                         </div>
                         <div class="hero__description">
                             <p>
@@ -87,11 +92,11 @@
                         </div>
                         <div class="hero__button-group">
                             <button>
-                                <a href="#" class="hero__button getstart">Get Started Free</a>
+                                <a href="#" class="hero__button getstart btn-blue">Get Started Free</a>
                             </button>
             
                             <button>
-                                <a href="#" class="hero__button explore">Explore Course</a>
+                                <a href="#" class="hero__button explore btn-transparent">Explore Course</a>
                             </button>
                         </div>
                     </div>
@@ -104,17 +109,17 @@
                 <div class="hero__right">
 
                     <div class="hero__image">
-                        <img src="./images/hero/person_image.svg" alt="Person Image" class="hero__image1">
+                        <img src="./assets/images/hero/person_image.svg" alt="Person Image" class="hero__image-main">
                     </div>
 
                     <div class="hero__elements course">
                         <i class="fa-regular fa-bookmark hero__courseicon"></i>
-                        <p>300+ Course</p>
+                        <p class="fs-200">300+ Course</p>
                     </div>
 
                     <div class="hero__elements students">
                         <i class="fa-solid fa-graduation-cap hero__studenticon"></i>
-                        <p>2500+ Student</p>
+                        <p class="fs-200">2500+ Student</p>
                     </div>
 
                     <div class="hero__elements trustpilot">
@@ -125,9 +130,9 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <div class="hero__elements-contents">
-                            <i class="fa-solid fa-star hero__trustpiloticon"></i>
-                            <p class="hero__trustpilot-title">Trustpilot</p>
+                        <div class="hero__elements-trustpilot-contents">
+                            <i class="fa-solid fa-star hero__trustpiloticon fs-300"></i>
+                            <p class="hero__trustpilot-title fs-300">Trustpilot</p>
                         </div>
                     </div>
                 </div>
@@ -136,7 +141,7 @@
             <section class="herocard" id="herocard">
                 <div class="herocard__content">
                     <div class="herocard__content-main">
-                        <i class="fa-solid fa-laptop herocard__classicon"></i>
+                        <i class="fa-solid fa-laptop herocard__classicon fs-300"></i>
                         <h5 class="herocard__title">Online Class</h5>
                     </div>
                     <p class="herocard__description">
@@ -147,7 +152,7 @@
 
                 <div class="herocard__content">
                     <div class="herocard__content-main">
-                        <i class="fa-solid fa-person-chalkboard herocard__mentoricon"></i>
+                        <i class="fa-solid fa-person-chalkboard herocard__mentoricon fs-300"></i>
                         <h5 class="herocard__title">Expert Mentor</h5>
                     </div>
                     <p class="herocard__description">
@@ -158,7 +163,7 @@
 
                 <div class="herocard__content">
                     <div class="herocard__content-main">
-                        <i class="fa-regular fa-clock hero__timeicon"></i>
+                        <i class="fa-regular fa-clock hero__timeicon fs-300"></i>
                         <h5 class="herocard__title">Life Time Access</h5>
                     </div>
                     <p class="herocard__description">
@@ -167,11 +172,189 @@
                     </p>
                 </div>
             </section>
+
+            <section class="popularCourse" id="popularCourse">
+                <div class="popularCourse__content">
+                    <h1 class="popularCourse__title fs-800 fw-6">Our Popular Courses</h1>
+                    <p class="popularCourse__description fs-400">
+                        Semper egestas diam mattis iaculis dui sit. 
+                        Consequat libero, mi elementum sem pretium, amet 
+                        vitae ultricies mattis. 
+                    </p>
+
+                    <div class="popularCourse__courses-content">
+
+                        <span class="popularCourse__slider-arrow-left"><i class="fa-solid fa-chevron-left"></i></span>
+
+                        <div class="popularCourse__course">
+                            <img src="./assets/images/course/ux.png" alt="" class="popularCourse__course-image">
+                            <p class="popularCourse__course-tag">Bestseller</p>
+
+                            <div class="popularCourse__course-bottom">
+                                <h4 class="popularCourse__course-title">Advance UX Course </h4>
+                                <p class="popularCourse__course-author">Jakob Culhane</p>
+                                <div class="popularCourse__course-rating">
+                                    <p class="popularCourse__course-rating-number">4.8</p>
+                                        <div class="popularCourse__course-rating-group">
+                                            <i class="fa-solid fa-star"></i>
+                                            <!-- <i class="fa-solid fa-star-half"></i> -->
+                                        </div>
+                                    <p class="popularCourse__course-enroll-number">(1500)</p>
+                                </div>
+                                <p class="popularCourse__course-price">$16.99</p>
+                            </div>
+                        </div>
+
+                        <div class="popularCourse__course">
+                            <img src="./assets/images/course/ui.png" alt="" class="popularCourse__course-image">
+                            <p class="popularCourse__course-tag">Bestseller</p>
+
+                            <div class="popularCourse__course-bottom">
+                                <h4 class="popularCourse__course-title">Advance UX Course </h4>
+                                <p class="popularCourse__course-author">Jakob Culhane</p>
+                                <div class="popularCourse__course-rating">
+                                    <p class="popularCourse__course-rating-number">4.8</p>
+                                        <div class="popularCourse__course-rating-group">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    <p class="popularCourse__course-enroll-number">(1500)</p>
+                                </div>
+                                <p class="popularCourse__course-price">$16.99</p>
+                            </div>
+                        </div>
+
+                        <div class="popularCourse__course">
+                            <img src="./assets/images/course/creation.png" alt="" class="popularCourse__course-image">
+                            <p class="popularCourse__course-tag">Bestseller</p>
+
+                            <div class="popularCourse__course-bottom">
+                                <h4 class="popularCourse__course-title">Advance UX Course </h4>
+                                <p class="popularCourse__course-author">Jakob Culhane</p>
+                                <div class="popularCourse__course-rating">
+                                    <p class="popularCourse__course-rating-number">4.8</p>
+                                        <div class="popularCourse__course-rating-group">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    <p class="popularCourse__course-enroll-number">(1500)</p>
+                                </div>
+                                <p class="popularCourse__course-price">$16.99</p>
+                            </div>
+                        </div>
+
+                        <div class="popularCourse__course">
+                            <img src="./assets/images/course/marketing.png" alt="" class="popularCourse__course-image">
+                            <p class="popularCourse__course-tag">Bestseller</p>
+
+                            <div class="popularCourse__course-bottom">
+                                <h4 class="popularCourse__course-title">Advance UX Course </h4>
+                                <p class="popularCourse__course-author">Jakob Culhane</p>
+                                <div class="popularCourse__course-rating">
+                                    <p class="popularCourse__course-rating-number">4.8</p>
+                                        <div class="popularCourse__course-rating-group">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    <p class="popularCourse__course-enroll-number">(1500)</p>
+                                </div>
+                                <p class="popularCourse__course-price">$16.99</p>
+                            </div>
+                        </div>
+
+                        <span class="popularCourse__slider-arrow-right"><i class="fa-solid fa-chevron-right"></i></span>
+                        
+                    </div>
+
+                    <button class="popularCourse__button">Browse Course</button>
+                </div>
+            </section>
+
+            <section class="searchCourse" id="searchCourse">
+                <div class="searchCourse__content">
+                    <h1 class="searchCourse__title fs-800 fw-6">Search Course By Category </h1>
+                    <p class="searchCourse__description fs-400">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Ornare lacus nulla quis id non nec enim, porta varius.
+                    </p>
+
+                    <div class="searchCourse__category-content">
+
+                        <div class="searchCourse__category-group">
+
+                            <div class="searchCourse__category">
+                                <div class="searchCourse__category-icon">
+                                    <img src="./assets/images/category/webdev.png" alt="web development & IT">
+
+                                    <div class="searchCourse__category-main">
+                                        <p>5K Students</p>
+                                        <h4>Web Development & IT</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="searchCourse__category">
+                                <div class="searchCourse__category-icon">
+                                    <img src="./assets/images/category/webdev.png" alt="web development & IT">
+
+                                    <div class="searchCourse__category-main">
+                                        <p>5K Students</p>
+                                        <h4>Web Development & IT</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="searchCourse__category">
+                                <div class="searchCourse__category-icon">
+                                    <img src="./assets/images/category/webdev.png" alt="web development & IT">
+
+                                    <div class="searchCourse__category-main">
+                                        <p>5K Students</p>
+                                        <h4>Web Development & IT</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="searchCourse__category">
+                                <div class="searchCourse__category-icon">
+                                    <img src="./assets/images/category/webdev.png" alt="web development & IT">
+
+                                    <div class="searchCourse__category-main">
+                                        <p>5K Students</p>
+                                        <h4>Web Development & IT</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+
+                    <button class="searchCourse__button">All Category</button>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
             
             <section class="about" id="about">
                 <div class="about__left">
                     <div class="about__left-content">
-                        <img src="./images/about/about.svg" alt="" class="about__left-img">
+                        <img src="./assets/images/about/about.svg" alt="" class="about__left-img">
                         <img src="./images/about/about-shape.svg" alt="" class="about__shape">
                     </div>
                 </div>
@@ -189,109 +372,6 @@
                     </div>
                 </div>
                 
-            </section>
-
-            <section class="popular" id="popular">
-                <div class="popular__content">
-                    <h1 class="popular__title">Most Searching Course</h1>
-                    <p class="description">
-                        Semper egestas diam mattis iaculis dui sit. 
-                        Consequat libero, mi elementum sem pretium, amet 
-                        vitae ultricies mattis. 
-                    </p>
-
-                    <div class="popular__course-content">
-                        <div class="popular__course">
-                            <img src="./images/course/ux.svg" alt="" class="popular__course-image">
-                            <p class="popular__course-tag">Bestseller</p>
-
-                            <div class="popular__course-bottom">
-                                <h4 class="popular__course-title">Advance UX Course </h4>
-                                <p class="popular__course-author">Jakob Culhane</p>
-                                <div class="popular__course-rating">
-                                    <p class="popular__course-rating-number">4.8</p>
-                                        <div class="popular__course-rating-group">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star-half"></i>
-                                        </div>
-                                    <p class="popular__course-enroll-number">(1500)</p>
-                                </div>
-                                <p class="popular__course-price">$16.99</p>
-                            </div>
-                        </div>
-                        <div class="popular__course">
-                            <img src="./images/course/ui.svg" alt="" class="popular__course-image">
-                            <p class="popular__course-tag">Bestseller</p>
-
-                            <div class="popular__course-bottom">
-                                <h4 class="popular__course-title">Advance UX Course </h4>
-                                <p class="popular__course-author">Jakob Culhane</p>
-                                <div class="popular__course-rating">
-                                    <p class="popular__course-rating-number">4.8</p>
-                                        <div class="popular__course-rating-group">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star-half"></i>
-                                        </div>
-                                    <p class="popular__course-enroll-number">(1500)</p>
-                                </div>
-                                <p class="popular__course-price">$16.99</p>
-                                
-                            </div>
-                        </div>
-                        <div class="popular__course">
-                            <img src="./images/course/creation.svg" alt="" class="popular__course-image">
-                            <p class="popular__course-tag">Bestseller</p>
-
-                            <div class="popular__course-bottom">
-                                <h4 class="popular__course-title">Advance UX Course </h4>
-                                <p class="popular__course-author">Jakob Culhane</p>
-                                <div class="popular__course-rating">
-                                    <p class="popular__course-rating-number">4.8</p>
-                                        <div class="popular__course-rating-group">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star-half"></i>
-                                        </div>
-                                    <p class="popular__course-enroll-number">(1500)</p>
-                                </div>
-                                <p class="popular__course-price">$16.99</p>
-                                
-                            </div>
-                        </div>
-                        <div class="popular__course">
-                            <img src="./images/course/marketing.svg" alt="" class="popular__course-image">
-                            <p class="popular__course-tag">Bestseller</p>
-
-                            <div class="popular__course-bottom">
-                                <h4 class="popular__course-title">Advance UX Course </h4>
-                                <p class="popular__course-author">Jakob Culhane</p>
-                                <div class="popular__course-rating">
-                                    <p class="popular__course-rating-number">4.8</p>
-                                        <div class="popular__course-rating-group">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star-half"></i>
-                                        </div>
-                                    <p class="popular__course-enroll-number">(1500)</p>
-                                </div>
-                                <p class="popular__course-price">$16.99</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <button class="popular__button">Explore Course</button>
-                </div>
             </section>
             
             <img src="./images/review/Shape.svg" alt="" class="review__element">
@@ -449,32 +529,32 @@
                     
                     <div class="footerarea__content">
                         <div class="footerarea__section">
-                            <a href="" class="footerarea__link title">Company</a>
-                            <a href="" class="footerarea__link">About</a>
-                            <a href="" class="footerarea__link">Feature</a>
-                            <a href="" class="footerarea__link">Works</a>
-                            <a href="" class="footerarea__link">Career</a>
+                            <a href="#" class="footerarea__link title">Company</a>
+                            <a href="#" class="footerarea__link">About</a>
+                            <a href="#" class="footerarea__link">Feature</a>
+                            <a href="#" class="footerarea__link">Works</a>
+                            <a href="#" class="footerarea__link">Career</a>
                         </div>
                         <div class="footerarea__section">
-                            <a href="" class="footerarea__link title">Help</a>
-                            <a href="" class="footerarea__link">Customer Support</a>
-                            <a href="" class="footerarea__link">Delivery Details</a>
-                            <a href="" class="footerarea__link">Terms & Conditions</a>
-                            <a href="" class="footerarea__link">Privacy Policy</a>
+                            <a href="#" class="footerarea__link title">Help</a>
+                            <a href="#" class="footerarea__link">Customer Support</a>
+                            <a href="#" class="footerarea__link">Delivery Details</a>
+                            <a href="#" class="footerarea__link">Terms & Conditions</a>
+                            <a href="#" class="footerarea__link">Privacy Policy</a>
                         </div>
                         <div class="footerarea__section">
-                            <a href="" class="footerarea__link title">Resources</a>
-                            <a href="" class="footerarea__link">Free eBooks</a>
-                            <a href="" class="footerarea__link">Development Tutorial</a>
-                            <a href="" class="footerarea__link">How to - Blog</a>
-                            <a href="" class="footerarea__link">Youtube Playlist</a>
+                            <a href="#" class="footerarea__link title">Resources</a>
+                            <a href="#" class="footerarea__link">Free eBooks</a>
+                            <a href="#" class="footerarea__link">Development Tutorial</a>
+                            <a href="#" class="footerarea__link">How to - Blog</a>
+                            <a href="#" class="footerarea__link">Youtube Playlist</a>
                         </div>
                         <div class="footerarea__section">
-                            <a href="" class="footerarea__link title">Links</a>
-                            <a href="" class="footerarea__link">Free eBooks</a>
-                            <a href="" class="footerarea__link">Development Tutorial</a>
-                            <a href="" class="footerarea__link">How to - Blog</a>
-                            <a href="" class="footerarea__link">Youtube Playlist</a>
+                            <a href="#" class="footerarea__link title">Links</a>
+                            <a href="#" class="footerarea__link">Free eBooks</a>
+                            <a href="#" class="footerarea__link">Development Tutorial</a>
+                            <a href="#" class="footerarea__link">How to - Blog</a>
+                            <a href="#" class="footerarea__link">Youtube Playlist</a>
                         </div>
                     </div>
                 </div>
@@ -500,7 +580,7 @@
         
     </div>
     <!-- fontawesome -->
-    <script src="./assets/all.min.js"></script>
+    <script src="./assets/fontawesome/all.min.js"></script>
     <!-- javaScript -->
     <Script src="main.js"></Script>
 </body>

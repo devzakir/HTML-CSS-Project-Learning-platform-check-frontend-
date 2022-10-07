@@ -1,0 +1,242 @@
+/* ----------------------------------*/
+/* Fonts                     
+/* ----------------------------------*/
+@font-face{
+    font-family: "Inter";
+    src: url(../font/Inter-Light.ttf) format('truetype');
+    font-weight: 300;
+    font-style: light;
+}
+
+@font-face{
+    font-family: "Inter";
+    src: url(../font/Inter-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: regular;
+}
+
+@font-face{
+    font-family: "Inter";
+    src: url(../font/Inter-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: medium;
+}
+
+@font-face{
+    font-family: "Inter";
+    src: url(../font/Inter-SemiBold.ttf) format('truetype');
+    font-weight: 600;
+    font-style: semibold;
+}
+
+@font-face{
+    font-family: "Inter";
+    src: url(../font/Inter-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: bold;
+}
+
+/* ----------------------------------*/
+/* Custom Properties                     
+/* ----------------------------------*/
+:root{
+    /* color */
+    --color-white: hsl(0, 0%, 100%);
+    --color-white-variant: hsl(0, 0%, 90%, .8);
+    --color-btn-blue: hsl(202, 80%, 45%);
+    --color-btn-dim-blue: hsla(202, 80%, 45%, 0.6);
+    --color-bg-blue: hsl(201, 100%, 89%);
+    --color-black: hsl(0, 0%, 20%);
+    --color-black-variant-1:hsla(0, 0%, 25%, .6);
+    
+    --color-shadow-dark-yellow: hsla(43, 100%, 50%, .3);
+    --color-shadow-purple: hsla(284, 100%, 72%, .3);
+    --color-shadow-pink: hsl(0, 100%, 86%);
+    --color-shadow-yellow: hsl(61, 100%, 50%);
+    
+    --shadow-color: 0deg 0% 58%;
+
+    /*font*/
+    --font: "Inter";
+
+    /* typography */
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.3125rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 2.652rem;
+    --font-size-4xl: 4rem;
+
+    /* transition */
+    --transition: 0.4s ease;
+
+    /* box Shadow */
+    --box-shadow-1: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    --box-shadow-2: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    --box-shadow-3: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+/* ----------------------------------*/
+/* Design System                     
+/* ----------------------------------*/ 
+/* colors */
+.bg-white {background-color: var(--color-white); }
+
+.text-dark { color: var(--color-black); }
+.text-white { color: var(--color-white); }
+
+/* letter spacing */
+.letter-spacing-1 { letter-spacing: 2.35px; }
+.letter-spacing-2 { letter-spacing: 2.7px; } 
+.letter-spacing-3 { letter-spacing: 4.75px; } 
+
+/* uppercase */
+.uppercase { text-transform: uppercase; }
+
+/* font size */
+.fs-200 { font-size: var(--font-size-xs); }
+.fs-300 { font-size: var(--font-size-sm); }
+.fs-400 { font-size: var(--font-size-md); }
+.fs-500 { font-size: var(--font-size-lg); }
+.fs-600 { font-size: var(--font-size-xl); }
+.fs-700 { font-size: var(--font-size-2xl); }
+.fs-800 { font-size: var(--font-size-3xl); }
+.fs-900 { font-size: var(--font-size-4xl); }
+
+/* font weight */
+.fw-7 { font-weight: 700; }
+.fw-6 { font-weight: 600; }
+.fw-5 { font-weight: 500; }
+.fw-4 { font-weight: 400; }
+.fw-3 { font-weight: 300; }
+
+/* line height */
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+    line-height: 1.5;
+}
+
+.fs-500,
+.fs-400,
+.fs-300 {
+    line-height: 1.5;
+}
+
+.box-shadow-sm { box-shadow: var( --box-shadow-1); }
+.box-shadow-md { box-shadow: var( --box-shadow-2); }
+.box-shadow-lg { box-shadow: var( --box-shadow-3); }
+
+/* ------------------- */
+/* Utility classes     
+/* ------------------- */ 
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.hidden{
+    display: none;
+}
+
+.transition { transition: all .4s ease-in-out; }
+
+/* ----------------------- */
+/* Reuseable Component     
+/* ----------------------- */ 
+html{
+    scroll-behavior: smooth;
+    font-family: "Inter";
+    font-weight: "400";
+    font-style: normal;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+img, span, a, .material-icons-outlined{
+    display: block;
+}
+
+button{
+    font: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.btn-transparent{
+    border: 2px solid rgba(23, 141, 208, 0.6);
+    border-radius: .3rem;
+    font-size: var(--font-size-sm);
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-blue{
+    border: 2px solid rgba(23, 141, 208, 0.6);
+    background-color: #178DD0;
+    border-radius: .3rem;
+    font-size: var(--font-size-sm);
+    transition: all .4s ease-in-out;
+    color: var(--color-white);
+    box-shadow: var(--box-shadow-1);
+    cursor: pointer;
+}
+
+.initial-margin{
+    margin: 1rem 0;
+}
+
+.initial-padding{
+    margin: 1rem 0;
+}
+
+/* ----------------------- */
+/* Custom Scrollbar    
+/* ----------------------- */ 
+::-webkit-scrollbar{
+    width: .5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #CFD8DC;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #178DD0;
+  }
+
+::-webkit-scrollbar-track{
+    background: var();
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 0px;
+    background: var();
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: var();
+}
+
+

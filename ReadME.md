@@ -1,4 +1,4 @@
-## Learning Paltform Landing Page Project (Skilled Learner)
+## Learning Paltform Landing Page Project
 
 ### Figma to HTML & CSS
 
@@ -23,13 +23,10 @@
 ### Undone
 * Media queries and responsiveness
 
-### Logo Credit
-[logoipsum](https://logoipsum.com/)
-
 ### Figam Credit: [Tanvir Ahmed]() 
 
 ### Image
 
 <kbd>
-    <img src="./image.png">    
+    <img src="./ux-design.png">    
 <kbd/>
