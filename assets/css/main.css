@@ -804,7 +804,7 @@
 .faq::before{
     content: '';
     position: absolute;
-    top: 300rem;
+    top: 280rem;
     left: -50rem;
     width: 70%;
     height: 95%;
@@ -961,8 +961,17 @@
 }
 
 .footerarea__social-media-group a{
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-md);
     color: var(--color-white);
+    background-color: hsl(215, 12%, 19%);
+    padding: .5rem .6rem;
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.footerarea__social-media-group a:hover{
+    background-color: var(--color-btn-blue);
+    transition: var(--transition);
 }
 
 .footerarea__company-section p{
@@ -1002,7 +1011,6 @@
     border-radius: 5px;
     box-shadow: var(--box-shadow-1);
     font-weight: 500;
-
 }
 
 /*======== Footer Bottom ============*/
