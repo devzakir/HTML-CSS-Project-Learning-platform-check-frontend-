@@ -52,7 +52,7 @@
     --color-shadow-dark-yellow: hsla(43, 100%, 50%, .3);
     --color-shadow-purple: hsla(284, 100%, 72%, .3);
     --color-shadow-pink: hsla(0, 100%, 86%, .4);
-    --color-shadow-yellow: hsl(61, 100%, 50%);
+    --color-shadow-yellow: hsla(61, 100%, 50%, .3);
     
     --shadow-color: 0deg 0% 58%;
 
