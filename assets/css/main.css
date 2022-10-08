@@ -3,8 +3,7 @@
 @import url(root.css);
 
 .container {
-    width: 100%;
-    max-width: 1200px;
+    width: 70%;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -261,7 +260,7 @@
 /*======== herocard Section ============*/
 .herocard{
     position: relative;
-    margin: 8rem auto;
+    margin: 15rem auto;
     width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -323,7 +322,7 @@
 
 /*======== Popular Course ============*/
 .popularCourse{
-    margin: 5rem 0;
+    margin: 10rem 5rem 0;
 }
 
 .popularCourse::before{
@@ -360,7 +359,7 @@
 .popularCourse__slider-arrow-left{
     position: absolute;
     left: 21rem;
-    top: 89rem;
+    top: 102rem;
     z-index: 1;
     font-size: var(--font-size-lg);
     padding: .8rem 1.1rem;
@@ -372,7 +371,7 @@
 .popularCourse__slider-arrow-right{
     position: absolute;
     right: 21rem;
-    top: 89rem;
+    top: 102rem;
     z-index: 1;
     font-size: var(--font-size-lg);
     padding: .8rem 1.1rem;
@@ -455,7 +454,7 @@
 
 /*======== Search Course Category Section ============*/
 .searchCourse{
-    margin: 5rem 0;
+    margin: 10rem 5rem 0;
 }
 
 .searchCourse__title{
@@ -470,16 +469,102 @@
     text-align: center;
 }
 
-.searchCourse__category-group{
+.searchCourse__category-content{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
 }
 
 .searchCourse__category{
-    padding: 1.5rem 2rem;
-    width: fit-content;
+    padding: 1rem;
+    height: 6rem;
+    width: 16rem;
     border: 1px solid var(--color-white-variant);
+    border-radius: .3rem;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.searchCourse__category:first-child{
     box-shadow: var(--box-shadow-1);
+}
+
+.searchCourse__category-main-content{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchCourse__category-main-imagearea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.searchCourse__category-main-imagearea.searchCourse__category-webdev{
+    width: 3rem;
+    padding: .9rem .7rem;
+    background-color: hsl(126, 100%, 96%);
+}
+
+.searchCourse__category-main-imagearea.searchCourse__category-design{
+    width: 3rem;
+    padding: .7rem .7rem;
+    background-color: hsl(72, 100%, 90%);
+}
+
+.searchCourse__category-main-imagearea.searchCourse__category-marketing{
+    width: 3rem;
+    padding: 1rem .7rem;
+    background-color: hsl(300, 100%, 97%);
+}
+
+.searchCourse__category-main-imagearea.searchCourse__category-writing{
+    width: 3rem;
+    padding: .8rem .8rem;
+    background-color: hsl(232, 100%, 97%);
+}
+
+.searchCourse__category-main-imagearea.searchCourse__category-music{
+    width: 2.8rem;
+    padding: .7rem .8rem;
+    background-color: hsl(330, 100%, 97%);
+}
+
+.searchCourse__category-main-imagearea.searchCourse__category-video{
+    width: 2.8rem;
+    padding: .9rem .8rem;
+    background-color: hsl(261, 100%, 97%);
+}
+
+.searchCourse__category-main-imagearea.searchCourse__category-finance{
+    width: 3rem;
+    padding: .8rem .8rem;
+    background-color: hsl(33, 100%, 96%);
+}
+
+.searchCourse__category-main-imagearea.searchCourse__category-engineering{
+    width: 2.8rem;
+    padding: .7rem .9rem;
+    background-color: hsl(166, 100%, 97%);
+}
+
+.searchCourse__category-main-imagearea img{
+    width: 1.5rem;
+}
+
+.searchCourse__category-main p{
+    font-size: var(--font-size-sm);
+    font-weight: 300;
+}
+
+.searchCourse__category-main h4{
+    margin-top: 5px;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
 }
 
 .searchCourse__button{
@@ -493,194 +578,163 @@
     box-shadow: var(--shadow-medium);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*======== About Section ============*/
-.about{
-    margin: 150px 0;
-    display: flex;
-    width: 100%;
-    position: relative;
-}
-
-
-.about__left{
-    width: 40%;
-    display: flex;
-    justify-content: center;
+.startLearning{
+    width: 80%;
+    margin: 10rem 0 5rem 0;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
     align-items: center;
 }
 
-.about__left-img{
-    position: relative;
-    border-radius: 10px;
-    box-shadow: -10px 10px 0 0 #9E81DA;
-    z-index: 2;
-}
-
-.about__shape{
+.startLearning__left::before{
+    content: '';
     position: absolute;
-    top: 220px;
-    left: -80px;
-    transform: rotate(27deg);
-    z-index: 1;
-    opacity: 0.5;
+    top: 175rem;
+    left: 0px;
+    width: 70%;
+    border-radius: 0 10rem 0 10rem;
+    height: 55vh;
+    background-color: hsl(201, 100%, 89%);
+    z-index: -1;
 }
 
-.about__right{
-    width: 60%;
+.startLearning__title{
+    color: var(--color-black);
 }
 
-.about__right-content{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 40px;
-}
-
-.about__button{
-    width: 100px;
-}
-
-.about__subtitle{
-    font-size: 12px;
-    color: #178DD0;
-    margin-bottom:5px;
-}
-
-.about__title{
-    font-size: 50px;
-    line-height: 1.6;
-    color: #323232;
-    margin:0 0 15px;
-}
-
-.about__description{
+.startLearning__description{
+    margin: 1.5rem 0;
     width: 80%;
     line-height: 1.6;
-    color: #323232;
-    margin-bottom: 15px;
 }
 
-.about__button{
+.startLearning__button{
+    display: flex;
+    text-align: center;
     background-color: #178DD0;
+    padding: 15px 25px;
     color: white;
-    height: 40px;
-    width: 150px;
-    font-size: 14px;
     border-radius: 5px;
+    box-shadow: var(--shadow-medium);
+}
+
+.startLearning__image-content{
+    width: 95%;
+    box-shadow: 0px 5px 0 5px #9E81DA;
+    border-radius: 10px;
+}
+
+.startLearning__image{
+    border-radius: 1rem;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /*======== Review ============*/
-.review__element{
-    position: absolute;
+.review{
+    margin: 15rem 0 5rem 0;
     z-index: 2;
-    top: 2300px;
-    left: 170px;
-    opacity: 0.2;
 }
 
-.review{
-    margin: 140px 0;
-    z-index: 2;
+.review::before{
+    content: '';
+    position: absolute;
+    top: 210rem;
+    right: 0rem;
+    width: 70%;
+    height: 95%;
+    background: radial-gradient(circle at center, var(--color-shadow-pink), transparent 50%);
+    background-size: 100rem;
+    z-index: -2;
 }
 
 .review__content{
     width: 100%;
     display: flex;
     justify-content: center;
-    
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .review__left{
     width: 50%;
-    z-index: 999;
 }
 
 .review__cards{
     position: relative;
     display: flex;
     width: 100%;
-    gap: 25px;
+    gap: 2rem;
     width: 90%;
     margin: 0 auto;
 }
 
 .review__card-left{
-    margin-top: 25px;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 2.5rem;
 }
 
 .review__card-right{
+    margin-top: 2.5rem;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 2.5rem;
 }
 
 .review__card{
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow-1);
+    border: 1px solid hsl(0, 0%, 89%);
     padding: 20px;
     border-radius: 5px;
 }
 
 .review__elements-star{
-    font-size: 14px;
+    font-size: var(--font-size-xs);
     color: #FCB500;
-    margin: 10px 0;
+    margin: 1rem 0;
 }
 
 .review__description{
-    font-size: 14px;
+    font-size: var(--font-size-sm);
     width: 100%;
-    line-height: 1.6;
-    margin: 10px 0;
+    line-height: 1.5;
 }
 
 .review__giver{
+    margin: 1.2rem 0;
     display: flex;
     align-items: center;
 }
+
 .review__avatar{
-    width: 40px;
+    object-fit: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 2.2rem;
     border-radius: 50%;
 }
 
 .review__into{
-    margin-left: 10px;
+    margin-left: .8rem;
 }
 
 .review__reviewer-name{
-    font-size: 16px;
+    font-size: var(--font-size-sm);
+    color: var(--color-black);
     font-weight: 500;
 }
 
 .review__reviewer-title{
-    font-size: 12px;
+    margin-top: 5px;
+    font-size: var(--font-size-xs);
+    color: hsl(0, 3%, 70%);
 }
 
 .review__right{
@@ -699,9 +753,12 @@
 }
 
 .review__description{
-    font-size: 14px;
-    line-height: 1.6;
-    margin: 10px 0;
+    font-size: var(--font-size-sm);
+    line-height: 1.7;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .review__button{
@@ -714,14 +771,17 @@
 }
 
 .review__element-arrow{
-    width: 82px;
-    margin-left: -28px;
-    margin-top: -32px;
+    width: 5rem;
+    margin-left: -2rem;
+    margin-top: -1.5rem;
 }
-
 /*======== Companies ============*/
 .companies{
-    margin: 40px 0 250px;
+    margin: 10rem 0 5rem 0;
+}
+
+.companies__subtitle{
+    text-align: center;
 }
 
 .companies__content{
@@ -741,13 +801,13 @@
     position: absolute;
     left: 0;
     width: 100%;
-    background-color: var(--color-blue);
+    background-color: hsl(215, 52%, 6%);
 }
 
 /*======== subscription ============*/
 .subs{
     width: 60%;
-    margin: -150px auto 0;
+    margin: -80px auto 0;
     position: relative;
     z-index: 999;
 }
