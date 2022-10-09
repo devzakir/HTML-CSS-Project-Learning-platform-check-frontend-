@@ -792,10 +792,9 @@
 }
 
 .review__title{
-    font-size: 40px;
     margin: 20px 0;
     font-size: var(--font-size-3xl);
-    font-weight: 500;
+    font-weight: 600;
     color: var(--color-black);
 }
 
@@ -808,20 +807,12 @@
     gap: 1rem;
 }
 
-.review__button{
-    width: 150px;
-    background-color: #178DD0;
-    padding: 8px 10px;
-    color: white;
-    border-radius: 3px;
-    margin: 10px 0;
-}
-
 .review__element-arrow{
     width: 5rem;
     margin-left: -2rem;
     margin-top: -1.5rem;
 }
+
 /*======== Companies ============*/
 .companies{
     margin: 10rem 0 5rem 0;
@@ -837,7 +828,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 40px 0;
+    margin: 4rem 0;
 }
 
 .companies__img{
@@ -847,7 +838,7 @@
 
 /*======== faq section ============*/
 .faq{
-    margin: 8rem 0 5rem 0;
+    margin: 10rem 0 5rem 0;
 }
 
 .faq::before{
@@ -864,7 +855,7 @@
 .faq__header{
     text-align: center;
     font-size: var( --font-size-3xl);
-    font-weight: 500;
+    font-weight: 600;
     color: var(--color-black);
 }
 
@@ -966,7 +957,7 @@
 .subs__left button{
     display: flex;
     text-align: center;
-    margin: 1.2rem 0;
+    margin: 1rem 0;
     background-color: #178DD0;
     padding: 15px 25px;
     color: white;

@@ -299,5 +299,179 @@
         background-size: cover;
     }
 
+    /*======== Review ============*/
+    .review{
+        margin: 10rem 0 3rem 0;
+    }
+
+    .review::before{
+        top: 180rem;
+        right: 0rem;
+    }
+
+    .review__content{
+        gap: 1rem;
+    }
+
+    .review__left{
+        width: 70%;
+    }
+
+    .review__cards{
+        gap: 1.5rem;
+        width: 100%;
+    }
+    
+    .review__card-left{
+        gap: 2rem;
+    }
+
+    .review__card-right{
+        margin-top: 2rem;
+        gap: 2rem;
+    }
+
+    .review__card{
+        padding: 15px;
+    }
+
+    .review__elements-star{
+        margin: .5rem 0;
+    }
+    .review__giver{
+        margin: .5rem 0;
+    }
+
+    .review__title{
+        margin: 1.5rem 0;
+        font-size: var(--font-size-2-5xl);
+        font-weight: 600;
+        color: var(--color-black);
+    }
+
+    .review__description{
+        line-height: 1.5;
+        margin: 1rem 0;
+        gap: .7rem;
+    }
+
+    .review__element-arrow{
+        width: 4rem;
+        margin-left: -1rem;
+        margin-top: -1rem;
+    }
+
+    /*======== Companies ============*/
+    .companies{
+        margin: 10rem 0 3rem 0;
+    }
+
+    .companies__content{
+        margin: 2rem 0;
+    }
+
+    .companies__img{
+        width: 130px;
+        height: 25px;
+    }
+
+    /*======== faq section ============*/
+    .faq{
+        margin: 10rem 0 3rem 0;
+    }
+    
+    .faq::before{
+        top: 230rem;
+        left: -33rem;
+        width: 75%;
+        height: 85%;
+        background-size: 65rem;
+    }
+
+    .faq__header{
+        font-size: var( --font-size-2-5xl);
+    }
+    
+    .faq__description{
+        width: 60%;
+    }
+
+    .faq__card{
+        width: 80%;
+        padding: 1.2rem;
+    }
+
+    .faq__card-content h3{
+        font-size: var(--font-size-sm);
+        font-weight: 600;
+    }
+
+    .faq__card-content p{
+        width: 90%;
+        font-size: var(--font-size-xs);
+        font-weight: 400;
+    }
+
+    .faq__icon{
+        font-size: var(--font-size-lg);
+    }
+
+    /*======== footer ============*/
+    /*======== subscription ============*/
+    .subs{
+        width: 85%;
+        margin: -9rem auto 0;
+        padding: 3rem;
+    }
+
+    .subs__left button{
+        margin: 1rem 0;
+        padding: .7rem;
+    }
+
+    .subs__right-img{
+        width: 20rem;
+    }
+
+    /*======== Footer Area ============*/
+    .footerarea{
+        margin-top: 3rem;
+    }
+
+    .footerarea__content{
+        display: grid;
+        grid-template-columns: 2fr repeat(4, 1fr);
+        width: 90%;
+        gap: 1rem;
+        margin: 5rem auto .8rem;
+        justify-content: center;
+    }
+
+    .footerarea__social-media-group{
+        gap: .6rem;
+    }
+
+    .footerarea__social-media-group a{
+        font-size: var(--font-size-sm);
+    }
+
+    .footerarea__company-about{
+        font-size: var(--font-size-xs);
+    }
+    
+    .footerarea__company-email{
+        margin-top: .6rem;
+        font-size: var(--font-size-xs);
+    }
+
+    /*======== Footer Bottom ============*/
+    .footer__bottom-content{
+        margin: 1rem 0 0 0;
+    }
+
+    .footer__bottom-title{
+        font-size: .8rem;
+    }
+
 }
 
