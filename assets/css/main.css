@@ -6,6 +6,7 @@
     width: 70%;
     margin: 0 auto;
     overflow: hidden;
+    max-width: 1875px;
 }
 
 .container::before{
@@ -35,6 +36,12 @@
 
 .nav__logo{
     width: 2.5rem;
+}
+
+.navbar__logo-title{
+    font-size: var(--font-size-xl);
+    font-weight: 500;
+    color: var(--color-black);
 }
 
 .nav__menu{
@@ -124,10 +131,17 @@
 
 .hero__left{
     width: 60%;
+    display: flex;
+    align-items: center;
 }
 
 .hero__title{
     color: var(--color-black);
+    font-size: var(--font-size-3xl);
+}
+
+.hero__title h1{
+    font-weight: 600;
 }
 
 .hero__description{
@@ -207,6 +221,10 @@
     border-radius: 50%;
 }
 
+.hero__course-title{
+    font-size: var(--font-size-xs);
+}
+
 .hero__elements.students{
     position: absolute;
     top: 7rem;
@@ -226,6 +244,10 @@
     padding: .4rem .4rem;
     background-color: rgba(23, 141, 208, 0.2);
     border-radius: 50%;
+}
+
+.hero__student-title{
+    font-size: var(--font-size-xs);
 }
 
 .hero__elements.trustpilot{
@@ -255,6 +277,11 @@
 
 .hero__trustpiloticon{
     color: #00B67A;
+    font-size: var(--font-size-sm);
+}
+
+.hero__trustpilot-title{
+    font-size: var(--font-size-sm);
 }
 
 /*======== herocard Section ============*/
@@ -289,6 +316,7 @@
     box-shadow: var(--box-shadow-1);
     padding: .7rem .6rem;
     border-radius: 50%;
+    font-size: var(--font-size-sm);
 }
 
 .herocard__title{
@@ -310,6 +338,7 @@
     box-shadow: var(--box-shadow-1);
     padding: .7rem .6rem;
     border-radius: 50%;
+    font-size: var(--font-size-sm);
 }
 
 .hero__timeicon{
@@ -318,6 +347,7 @@
     box-shadow: var(--box-shadow-1);
     padding: .7rem .7rem;
     border-radius: 50%;
+    font-size: var(--font-size-sm);
 }
 
 /*======== Popular Course ============*/
@@ -341,12 +371,15 @@
     text-align: center;
     color: var(--color-black);
     margin: 2rem 0;
+    font-size: var(--font-size-3xl);
+    font-weight: 600;
 }
 
 .popularCourse__description{
     width: 50%;
     margin: 2rem auto;
     text-align: center;
+    font-size: var(--font-size-md);
 }
 
 .popularCourse__courses-content{
@@ -391,7 +424,7 @@
     left: 1rem;
     top: 1rem;
     text-align: center;
-    background-color: #F2D262;
+    background-color: hsl(47, 85%, 67%);
     width: fit-content;
     padding-inline: .5rem;
     box-shadow: var(--shadow-medium);
@@ -461,12 +494,24 @@
     text-align: center;
     color: var(--color-black);
     margin: 2rem 0;
+    font-size: var(--font-size-3xl);
+    font-weight: 600;
 }
 
 .searchCourse__description{
     width: 50%;
     margin: 2rem auto;
     text-align: center;
+    font-size: var(--font-size-md);
+}
+
+.searchCourse__category{
+    transition: var(--transition);
+}
+
+.searchCourse__category:hover{
+    box-shadow: var(--box-shadow-1);
+    transition: var(--transition);
 }
 
 .searchCourse__category-content{
@@ -484,10 +529,6 @@
     display: flex;
     align-items: center;
     margin: auto;
-}
-
-.searchCourse__category:first-child{
-    box-shadow: var(--box-shadow-1);
 }
 
 .searchCourse__category-main-content{
@@ -578,7 +619,7 @@
     box-shadow: var(--shadow-medium);
 }
 
-/*======== About Section ============*/
+/*======== Start Learning Section ============*/
 .startLearning{
     width: 80%;
     margin: 10rem 0 5rem 0;
@@ -591,7 +632,7 @@
 .startLearning__left::before{
     content: '';
     position: absolute;
-    top: 175rem;
+    top: 173rem;
     left: 0px;
     width: 70%;
     border-radius: 0 10rem 0 10rem;
@@ -602,12 +643,15 @@
 
 .startLearning__title{
     color: var(--color-black);
+    font-size: var(--font-size-3xl);
+    font-weight: 500;
 }
 
 .startLearning__description{
     margin: 1.5rem 0;
     width: 80%;
     line-height: 1.6;
+    font-size: var(--font-size-sm);
 }
 
 .startLearning__button{
@@ -750,6 +794,9 @@
 .review__title{
     font-size: 40px;
     margin: 20px 0;
+    font-size: var(--font-size-3xl);
+    font-weight: 500;
+    color: var(--color-black);
 }
 
 .review__description{
@@ -782,6 +829,8 @@
 
 .companies__subtitle{
     text-align: center;
+    font-size: var(--font-size-md);
+    font-weight: 300;
 }
 
 .companies__content{
@@ -896,16 +945,22 @@
 
 .subs__left h4{
     color: var(--color-black);
+    font-size: var(--font-size-md);
+    font-weight: 400;
 }
 
 .subs__left h2{
     color: var(--color-black);
     margin: .5rem 0;
+    font-size: var(--font-size-2xl);
+    font-weight: 600;
 }
 
 .subs__left p{
     color: var(--color-black);
     margin: .5rem 0;
+    font-size: var(--font-size-sm);
+    font-weight: 300;
 }
 
 .subs__left button{
@@ -933,10 +988,11 @@
 
 .footerarea__content{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    width: 80%;
+    grid-template-columns: 2fr repeat(4, 1fr);
+    width: 60%;
     gap: 80px;
     margin: 60px auto 10px;
+    justify-content: center;
 }
 
 .footerarea__company-section{
@@ -986,8 +1042,13 @@
     margin: 1rem 0;
 }
 
+.footerarea__company-about{
+    font-size: var(--font-size-sm);
+}
+
 .footerarea__company-email{
-    margin-top: 5px;
+    margin-top: .8rem;
+    font-size: var(--font-size-sm);
 }
 
 .footerarea__link-title{

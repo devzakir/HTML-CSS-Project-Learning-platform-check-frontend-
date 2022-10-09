@@ -66,6 +66,7 @@
     --font-size-lg: 1.125rem;
     --font-size-xl: 1.3125rem;
     --font-size-2xl: 1.5rem;
+    --font-size-2-5xl: 2rem;
     --font-size-3xl: 2.652rem;
     --font-size-4xl: 4rem;
 
@@ -82,35 +83,38 @@
 /* Design System                     
 /* ----------------------------------*/ 
 /* colors */
-.bg-white {background-color: var(--color-white); }
+/* .bg-white {background-color: var(--color-white); }
 
 .text-dark { color: var(--color-black); }
-.text-white { color: var(--color-white); }
+.text-white { color: var(--color-white); } 
+*/
 
 /* letter spacing */
-.letter-spacing-1 { letter-spacing: 2.35px; }
+/* .letter-spacing-1 { letter-spacing: 2.35px; }
 .letter-spacing-2 { letter-spacing: 2.7px; } 
-.letter-spacing-3 { letter-spacing: 4.75px; } 
+.letter-spacing-3 { letter-spacing: 4.75px; }  
+*/
 
 /* uppercase */
-.uppercase { text-transform: uppercase; }
+/* .uppercase { text-transform: uppercase; } */
 
 /* font size */
-.fs-200 { font-size: var(--font-size-xs); }
+/* .fs-200 { font-size: var(--font-size-xs); }
 .fs-300 { font-size: var(--font-size-sm); }
 .fs-400 { font-size: var(--font-size-md); }
 .fs-500 { font-size: var(--font-size-lg); }
 .fs-600 { font-size: var(--font-size-xl); }
 .fs-700 { font-size: var(--font-size-2xl); }
 .fs-800 { font-size: var(--font-size-3xl); }
-.fs-900 { font-size: var(--font-size-4xl); }
+.fs-900 { font-size: var(--font-size-4xl); } */
 
 /* font weight */
-.fw-7 { font-weight: 700; }
+/* .fw-7 { font-weight: 700; }
 .fw-6 { font-weight: 600; }
 .fw-5 { font-weight: 500; }
 .fw-4 { font-weight: 400; }
-.fw-3 { font-weight: 300; }
+.fw-3 { font-weight: 300; } 
+*/
 
 /* line height */
 .fs-900,
@@ -126,9 +130,10 @@
     line-height: 1.5;
 }
 
-.box-shadow-sm { box-shadow: var( --box-shadow-1); }
+/* .box-shadow-sm { box-shadow: var( --box-shadow-1); }
 .box-shadow-md { box-shadow: var( --box-shadow-2); }
-.box-shadow-lg { box-shadow: var( --box-shadow-3); }
+.box-shadow-lg { box-shadow: var( --box-shadow-3); } 
+*/
 
 /* ------------------- */
 /* Utility classes     
