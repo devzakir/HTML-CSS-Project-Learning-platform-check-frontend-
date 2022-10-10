@@ -23,6 +23,12 @@
 * CSS pseudo code
 * Responsive Code
 
+### Screen Breakpoints
+* 1200 ✔
+* 900 ✔
+* 600 ✔
+* 320 ➖
+
 ### Figam Credit: [Tanvir Ahmed](https://www.behance.net/tanvirmahmeed/) 
 
 ### Desktop Demo Screenshot
