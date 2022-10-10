@@ -1,20 +1,5 @@
 /* screen breakpoints */
 
-/*===== Extra Small Feature Phone Screen =====*/
-@media screen and (max-width: 320px) {
-   
-}
-
-/*===== Tablet Screen =====*/
-@media screen and (max-width: 600px) {
-
-}
-
-/*===== Notebook Size Large Screen =====*/
-@media screen and (max-width: 900px) {
-
-}
-
 /*===== Large Screen =====*/
 @media screen and (max-width: 1024px) {
     .container {
@@ -126,6 +111,7 @@
         border-radius: .4em;
         padding: .5rem .7rem;
     }
+
     /*======== herocard Section ============*/
     .herocard{
         margin: 10rem auto;
@@ -264,9 +250,9 @@
     }
 
     .startLearning__left::before{
-        top: 150rem;
+        top: 152rem;
         border-radius: 0 5rem 0 5rem;
-        height: 45vh;
+        height: 20rem;
     }
 
     .startLearning__title{
@@ -472,6 +458,512 @@
     .footer__bottom-title{
         font-size: .8rem;
     }
-
 }
 
+/*===== Notebook Size Large Screen =====*/
+@media screen and (max-width: 900px) {
+    /*======== hero Section ============*/
+    .main{
+        margin-top: 6rem;
+    }
+
+    .hero__title{
+        font-size: var(--font-size-2xl);
+    }
+
+    .hero__description p{
+        font-size: var(--font-size-sm);
+    }
+
+    /*======== herocard Section ============*/
+    .herocard{
+        margin: 8em auto;
+    }
+
+    .herocard__content{
+        padding: 1.2rem 1rem;
+    }
+
+    /*======== Popular Course ============*/
+    .popularCourse__slider-arrow-left{
+        left: 3rem;
+        top: 74rem;
+        padding: .5rem .8rem;
+    }
+
+    .popularCourse__slider-arrow-right{
+        right: 3rem;
+        top: 74rem;
+        padding: .5rem .8rem;
+    }
+
+    .popularCourse__course-image{
+        width: 11rem;
+    }
+
+    .popularCourse__button{
+        padding: .8rem 1rem;
+        font-size: var(--font-size-sm);
+    }
+
+    /*======== Search Course Category Section ============*/
+    .searchCourse{
+        margin: 8rem 3rem 0;
+    }
+
+    .searchCourse__category-content{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        justify-content: center;
+    }
+
+    .searchCourse__category{
+        padding: .7rem;
+        width: 15rem;
+    }
+
+    .searchCourse__button{
+        padding: .8rem 1rem;
+        font-size: var(--font-size-sm);
+    }
+
+    /*======== Start Learning Section ============*/
+    .startLearning{
+        margin: 8rem 0 3rem 0;
+    }
+
+    .startLearning__left::before{
+        top: 139rem;
+        border-radius: 0 5rem 0 5rem;
+        height: 21.5rem;
+    }
+
+    .startLearning__button{
+        padding: .8rem 1rem;
+        font-size: var(--font-size-sm);
+    }
+
+    /*======== Review ============*/
+    .review::before{
+        top: 170rem;
+        right: 0rem;
+    }
+
+    /*======== Footer Area ============*/
+    .footerarea__company-section img{
+        width: 1.5rem;
+     }
+     
+     .footerarea__company-title{
+         font-size: var(--font-size-md);
+     }
+
+    .footerarea{
+        margin-top: 1rem;
+    }
+
+    .footerarea__content{
+        margin: 3rem auto .8rem;
+    }
+
+    .footerarea__link-title{
+        font-size: var(--font-size-sm);
+    }
+    
+    .footerarea__link{
+        font-size: var(--font-size-xs);
+    }
+
+    /*======== Footer Bottom ============*/
+    .footer__bottom-title{
+        font-size: 12px;
+    }
+    
+}
+
+/*===== Tablet Screen =====*/
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    .container::before{
+        top: 0px;
+        left: 0px;
+        width: 50%;
+        height: 70vh;
+    }
+
+    /*======== navbar ============*/
+
+    .nav__menu{
+        display: none;
+    }
+
+    .nav__toggle{
+        display: block;
+        font-size: var(--font-size-xl);
+        color: var(--color-btn-blue);
+    }
+
+    /*======== hero Section ============*/
+    .main{
+        margin-top: 6rem;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        margin-inline: auto;
+    }
+
+    .hero__left{
+        width: 100%;
+        
+    }
+
+    .hero__title{
+        font-size: var(--font-size-2-5xl);
+    }
+
+    .hero__title h1{
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .hero__description{
+        margin-top: 1.8rem;
+        margin-inline: auto;
+        text-align: center;
+        width: 90%;
+    }
+
+    .hero__description p{
+        line-height: 1.7;
+    }
+
+    .hero__button-group{
+       justify-content: center;
+    }
+
+    .hero__right{
+        width: 100%;
+        margin-top: 3rem;
+        justify-content: center;
+    }
+
+    .hero__image{
+        width: 50%;
+        box-shadow: none;
+    }
+
+    .hero__image-main{
+        border-radius: .4rem;
+    }
+
+    .hero::before{
+        top: 14rem;
+        left: 15rem;
+        width: 70%;
+        height: 70%;
+        background-size: 40rem;
+    }
+
+    .hero__elements.course{
+        gap: .2rem;
+        top: 4rem;
+        left: 4rem;
+        border-radius: .4rem;
+        padding: .3rem .4rem;
+    }  
+
+    .hero__elements.students{
+        top: 6rem;
+        right: 3rem;
+        border-radius: .3rem;
+        padding: .3rem .4rem;
+    }
+
+    .hero__elements.trustpilot{
+        top: 13rem;
+        left: 6rem;
+        border-radius: .3rem;
+        padding: .3rem .4rem;
+    }
+
+    .hero__elements-star{
+        font-size: 8px;
+    }
+
+    .hero__trustpiloticon{
+        font-size: var(--font-size-xs);
+    }
+
+    .hero__trustpilot-title{
+        font-size: var(--font-size-xs);
+    }
+
+    /*======== herocard Section ============*/
+    .herocard{
+        margin: 20rem auto 0;
+        grid-template-columns: repeat(1, 1fr);
+        border-radius: .6rem;
+    }
+
+    .herocard__content:not(:last-child){
+        border-bottom: 1px solid var(--color-white-variant);
+    }
+
+    /*======== Popular Course ============*/
+    .popularCourse{
+        margin: 5rem auto 0;
+    }
+
+    .popularCourse::before{
+        top: 73rem;
+        left: -3rem;
+        width: 32%;
+        height: 75%;
+        background-size: 12rem;
+    }
+
+    .popularCourse__description{
+        width: 80%;
+        margin: 1.5rem auto;
+        line-height: 1.6;
+        font-size: var(--font-size-sm);
+    }
+
+    .popularCourse__courses-content{
+       margin-top: 3rem;
+    }
+
+    .popularCourse__slider-arrow-left{
+        left: 1rem;
+        top: 96.5rem;
+    }
+
+    .popularCourse__slider-arrow-right{
+        right: 1rem;
+        top: 96.5rem;
+    }
+
+    .popularCourse__button{
+        margin: 3rem auto;
+        padding: 12px 20px;
+        font-size: var(--font-size-xs);
+    }
+
+    /*======== Search Course Category Section ============*/
+    .searchCourse{
+        margin: 5rem auto 0;
+    }
+
+    .searchCourse__description{
+        line-height: 1.6;
+    }
+
+    .searchCourse__category-content{
+        margin-top: 3rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .searchCourse__category{
+        padding: .5rem;
+        height: 5rem;
+        width: 15rem;
+    }
+
+    .searchCourse__button{
+        margin: 3rem auto;
+        padding: 12px 20px;
+        font-size: var(--font-size-xs);
+    }
+
+    /*======== Start Learning Section ============*/
+    .startLearning{
+        margin: 5rem auto 0;
+        grid-template-columns: 1fr;
+    }
+
+    .startLearning__left::before{
+        top: 161.5rem;
+        left: 0px;
+        width: 100%;
+        border-radius: 0 5rem 0 5rem;
+        height: 18rem;
+        background-color: hsl(201, 100%, 89%);
+        z-index: -1;
+    }
+
+    .startLearning__description{
+        margin: 1.3rem 0;
+        width: 100%;
+    }
+
+    .startLearning__button{
+        margin: 1.5rem 0;
+        padding: 12px 20px;
+        font-size: var(--font-size-xs);
+    }
+
+    .startLearning__image-content{
+        margin-top: 4rem;
+        margin-inline: auto;
+        width: 25rem;
+        border-radius: 8px;
+    }
+
+    .startLearning__image{
+        width: 100%;
+        border-radius: .6rem;
+    }
+
+    /*======== Review ============*/
+    .review{
+        margin: 5rem auto 0;
+    }
+
+    .review::before{
+        top: 200rem;
+        background-size: 50rem;
+    }
+
+    .review__content{
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+    .review__left{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .review__right{
+        width: 100%;
+    }
+
+    .review__title{
+        text-align: center;
+    }
+
+    .review__description{
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .review__element-arrow{
+        display: none;
+    }
+
+    /*======== Companies ============*/
+    .companies{
+        margin: 5rem auto 0;
+    }
+
+    .companies__subtitle{
+        font-weight: 400;
+    }
+
+    .companies__content{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 4rem 0;
+    }
+
+    .companies__content{
+        flex-wrap: wrap;
+        gap: 2.5rem;
+        margin: 3rem 0;
+    }
+
+    .companies__img{
+        width: 150px;
+        height: 35px;
+    }
+
+    /*======== faq section ============*/
+    .faq{
+        margin: 5rem auto 0;
+    }
+
+    .faq::before{
+        top: 270rem;
+        left: -21rem;
+        width: 100%;
+        height: 100%;
+        background-size: 38rem;
+    }
+
+    .faq__description{
+        width: 80%;
+        margin: 1.5rem 0 1rem 0;
+    }
+
+    .faq__card-group{
+        margin-top: 2.5rem;
+    }
+
+    .faq__card{
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .faq__card:not(:first-child){
+        margin-top: 1.2rem;
+    }
+
+    /*======== footer ============*/
+    /*======== subscription ============*/
+    .subs{
+        width: 90%;
+        margin: -10rem auto 0;
+        gap: 1.5rem;
+        padding: 1.5rem;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .subs__left h4{
+        font-size: var(--font-size-sm);
+        font-weight: 500;
+    }
+    
+    .subs__left h2{
+        margin: 1rem 0;
+    }
+    
+    .subs__left p{
+        width: 80%;
+        font-weight: 400;
+    }
+    
+    .subs__left button{
+        margin: 1.5rem 0 0;
+        padding: 12px 20px;
+        font-size: var(--font-size-xs);
+    }
+
+    .subs__right-img{
+        width: 13.5rem;
+    }
+
+    /*======== Footer Area ============*/
+    .footerarea{
+        margin-top: 2rem;
+    }
+
+    .footerarea__content{
+        grid-template-columns: 2fr repeat(2, 1fr);
+        width: 80%;
+        gap: 20px;
+        margin: 60px auto 10px;
+        justify-content: center;
+    }
+}
+
+/*===== Extra Small Feature Phone Screen =====*/
+@media screen and (max-width: 320px) {
+   
+}
