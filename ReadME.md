@@ -1,13 +1,17 @@
 <div align="center">
-  <br />
   
-  <img src="./assets/images/logo.svg" />
+<br />
 
-  <h2 align="center">Agencio - Find Course & Improve Your Skill</h2>
+  <h2 align="center">
+    <img src="./assets/images/logo.svg" />
+    Agencio - Find Course & Improve Your Skill
+  </h2>
+
+<br />
 
   Agencio is a fully responsive Learning Website Landing page, <br />Responsive for all devices, built using HTML, CSS
 
-  <a href="#"><strong>➡ Live Demo</strong></a>
+  <a href="https://mhasanmeet.github.io/HTML-CSS-Project-Learning-platform/"><strong>➡ Live Demo</strong></a>
 
 </div>
 
@@ -19,8 +23,10 @@
 * Clean code
 * CSS Custom Properties
 * CSS FlexBox
+* CSS Grid
 * CSS positioning
 * CSS pseudo code
+* Responsive Code
 
 ### Figam Credit: [Tanvir Ahmed](https://www.behance.net/tanvirmahmeed/) 
 
@@ -28,11 +34,8 @@
 
 ![Agencio Desktop Demo](./ux-design.png "Desktop Demo")
 
-
 <div align="center">
   
   ![GitHub repo size](https://img.shields.io/github/repo-size/mhasanmeet/HTML-CSS-Project-Learning-platform)
-  <!-- ![GitHub stars](https://img.shields.io/github/stars/codewithsadee/filmlane?style=social) -->
-  ![GitHub forks](https://img.shields.io/github/forks/codewithsadee/filmlane?style=social)
 
 </div>
