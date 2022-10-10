@@ -2,13 +2,9 @@
 
   <h2 align="center">
     Agencio - Find Course & Improve Your Skill
-    
-<br />
   </h2>
 
-<br />
-
-  Agencio is a fully responsive Learning Website Landing page, <br />Responsive for all devices, built using HTML, CSS
+  <b> Agencio </b> is a fully responsive Learning Website Landing page, <br />Responsive for all devices, built using HTML, CSS
 
   <a href="https://mhasanmeet.github.io/HTML-CSS-Project-Learning-platform/"><strong>➡ Live Demo</strong></a>
 
@@ -31,7 +27,7 @@
 
 ### Desktop Demo Screenshot
 
-![Agencio Desktop Demo](./ux-design.png "Desktop Demo")
+![Agencio Desktop Demo](./agencio-ux-full-page.jpg "Desktop Demo")
 
 <div align="center">
   
