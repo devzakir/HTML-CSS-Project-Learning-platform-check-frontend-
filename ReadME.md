@@ -1,10 +1,9 @@
 <div align="center">
-  
-<br />
 
   <h2 align="center">
-    <img src="./assets/images/logo.svg" />
     Agencio - Find Course & Improve Your Skill
+    
+    <br />
   </h2>
 
 <br />
