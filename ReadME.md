@@ -27,10 +27,10 @@
 
 ### Desktop Demo Screenshot
 
-![Agencio Desktop Demo](./agencio-ux-full-page.jpg "Desktop Demo")
-
 <div align="center">
-  
+
+  ![Agencio Desktop Demo](./agencio-full-web-ux-design.png "Desktop Demo")
+
   ![GitHub repo size](https://img.shields.io/github/repo-size/mhasanmeet/HTML-CSS-Project-Learning-platform)
 
 </div>
