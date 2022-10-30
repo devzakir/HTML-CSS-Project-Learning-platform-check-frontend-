@@ -27,7 +27,7 @@
 * 1200 ✔
 * 900 ✔
 * 600 ✔
-* 320 ➖
+* 320 ✔
 
 ### Figam Credit: [Tanvir Ahmed](https://www.behance.net/tanvirmahmeed/) 
 
